@@ -1,11 +1,7 @@
 module.exports = {
-  open: true,
   server: {
-    baseDir: "./",
-    serveStaticOptions: {
-      extensions: ["html"],
-    },
+    baseDir: "./", // Serve files from the root directory
   },
-  files: "./",
-  ignore: ["./node_modules/*"],
+  port: 3000, // Or any other port you prefer
+  files: ["assets/styles/*.css", "*.html"], // Watch CSS and HTML files for changes
 };
